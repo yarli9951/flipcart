@@ -1,0 +1,11 @@
+name: Sample Job
+on: workflow_dispatch
+jobs:
+  first-job:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Welcome to DevOps World
+        run: echo "Welcome to DevOps World"
+      - name: github
+        run: ls -lrt ; pwd
+        
